@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Add {
+    public static void main(String args[])
+    {   
+        int i;
+        int ea=0,oa=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The range of no=");
+        int n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                ea+=i;
+
+            }
+            else
+            {
+                oa+=i;
+            }
+           
+        }
+        System.out.println("Addition of Even no="+ea);
+         System.out.println("Addition of odd no="+oa);
+
+
+
+    }
+    
+}
