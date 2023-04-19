@@ -4,8 +4,8 @@ public class Getter {
         Student s=new Student();
         s.getAdmNO("22SCSE2140004");
         s.setMarks(25);
-        System.out.println(this.adMno);
-        System.out.println(this.marks);
+        System.out.println(s.adMno);
+        System.out.println(s.marks);
 
     }
 
@@ -13,8 +13,8 @@ public class Getter {
 }
 class Student
 {
-    private String adMno;
-    private int marks;
+     String adMno;
+     int marks;
     //Getter method
     public String getAdmNO(String adMno)
     {
