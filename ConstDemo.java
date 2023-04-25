@@ -13,6 +13,6 @@ class Initialize{
     }
     void print_val()
     {
-        System.out.println("Initialized value="+a);
+        System.out.println("Initialized value of Variable="+a);
     }
 }
