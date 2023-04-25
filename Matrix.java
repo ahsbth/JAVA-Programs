@@ -4,6 +4,7 @@ public class Matrix {
     {
        int A[][]=new int[2][2];//first Matrix
        int B[][]=new int[2][2];//Second Matrix
+       int D[][]=new int[2][2];//fourth matrix
        int i,j,k;
        int C[][]=new int[2][2];// third matrix 
        Scanner sc=new Scanner(System.in);
@@ -25,6 +26,26 @@ public class Matrix {
             B[i][j]=sc.nextInt();
         }
        }
+       /* Addition of Matrix code */
+       for(i=0;i<2;i++)
+       {
+        for(j=0;j<2;j++)
+        {
+             D[i][j]=A[i][j]+B[i][j];
+        }
+
+       }
+       System.out.println("After addition of two Matrixes");
+       for(i=0;i<2;i++)
+       {
+        for(j=0;j<2;j++)
+        {
+            System.out.print("\t"+D[i][j]);
+        }
+        System.out.println();
+       }
+      
+    
        /*-------------Code for Multiplication------------------ */
        for(i=0;i<2;i++)
        {
