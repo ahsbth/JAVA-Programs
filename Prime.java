@@ -1,6 +1,6 @@
 class Prime{
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 100;
         System.out.println("The prime numbers up to " + n + " are:");
         for (int i = 2; i <= n; i++) {
             boolean isPrime = true;
