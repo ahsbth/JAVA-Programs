@@ -3,7 +3,7 @@ public class MultipleinheritenceWithInterface{
     public static void main(String args[])
     {
        Rectangle r=new Rectangle();
-       find f=r;
+       find f=r;//creating variable of Interface and initialized with the object of Rectangle class
        f.area();
        f.perimeter();
        r.put();
@@ -25,11 +25,11 @@ interface find{
 }
 class Rectangle extends Data implements find{
     float a,p;
-    public void area()
+    public void area()//interface methode
     {  input();
        a=l*b;
     }
-    public void perimeter()
+    public void perimeter()//interface methode
     {
      p=2*(l+b);
     }
