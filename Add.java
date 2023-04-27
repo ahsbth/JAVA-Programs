@@ -2,8 +2,7 @@ import java.util.Scanner;
 public class Add {
     public static void main(String args[])
     {   
-        int i;
-        int ea=0,oa=0;
+        int ea=0,oa=0,i;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter The range of no=");
         int n=sc.nextInt();
@@ -12,15 +11,13 @@ public class Add {
             if(i%2==0)
             {
                 ea+=i;
-
             }
             else
             {
                 oa+=i;
             }
-           
         }
-        System.out.println("Addition of Even no="+ea);
+         System.out.println("Addition of Even no="+ea);
          System.out.println("Addition of odd no="+oa);
 
 
