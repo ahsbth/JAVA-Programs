@@ -35,9 +35,7 @@ class Rectangle extends Data implements find{
     }
     void put()
     {   
-          //input();
-    //     area();
-    //     perimeter();
+        
         System.out.println("Area of Rectangle="+a);
         System.out.println("Perimeter of Rectangle="+p);
 
