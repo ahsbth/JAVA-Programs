@@ -17,8 +17,8 @@ public class Add {
                 oa+=i;
             }
         }
-         System.out.println("Addition of Even no="+ea);
-         System.out.println("Addition of odd no="+oa);
+         System.out.println("Addition of Even no=\t"+ea);
+         System.out.println("Addition of odd no=\t"+oa);
 
 
 
