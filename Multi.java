@@ -1,20 +1,19 @@
 import java.util.Scanner;
-
-import javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 public class Multi {
     public static void main(String args[])
-    {
-        int A[][]=new int[r1][c1];
-        int B[][]=new int[r2][c2];
-        int C[][]=new int[c1][r2];
-        int i,j,k,sum,r1,c1,r2,c2;
+    {   
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter no of row and column for First Matrix=");
-        r1=sc.nextInt();
-        c1=sc.nextInt();
+        int r1=sc.nextInt();
+        int c1=sc.nextInt();
         System.out.println("Enter no of row and column for Second Matrix=");
-        r2=sc.nextInt();
-        c2=sc.nextInt();
+        int r2=sc.nextInt();
+        int c2=sc.nextInt();
+        int A[][]=new int[r1][c1];
+        int B[][]=new int[r2][c2];
+       // int C[][]=new int[c1][r2];
+       int i,j;
+       
         System.out.println("Enter value for First matrix=");
         for(i=0;i<r1;i++)
         {
@@ -36,7 +35,7 @@ public class Multi {
         {
             for(j=0;j<c1;j++)
             {
-               System.out.print("/t"+A[i][j]);
+               System.out.print("\t"+A[i][j]);
             }
             System.out.println("\n");
         }
@@ -45,7 +44,7 @@ public class Multi {
         {
             for(j=0;j<c2;j++)
             {
-               System.out.print("/t"+B[i][j]);
+               System.out.print("\t"+B[i][j]);
             }
             System.out.println("\n");
         }
