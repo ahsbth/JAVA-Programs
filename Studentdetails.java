@@ -1,7 +1,7 @@
 
 public class Studentdetails {
     public static void main(String args[]){
-       
+        
       Student s1=new Student();
       Student s2=new Student();
       s1.name="Amar Kumar";
@@ -12,14 +12,13 @@ public class Studentdetails {
       s2.age=23; 
       s1.printData();
       s2.printData();
-
     }
     
 }
 class Student{
     String name,city;
-    int age;
-    void printData()
+        int age;
+ public void printData()
     {
         System.out.println("Students Details");
         System.out.println("Name="+name+"\tCity="+city+"\tAge="+age);

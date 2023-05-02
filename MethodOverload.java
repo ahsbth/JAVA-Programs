@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Overload 
+public class MethodOverload 
 {
     public static void main(String args[])
     {
