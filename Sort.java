@@ -11,41 +11,52 @@ public class Sort{
           a[i]=sc.nextInt();
         }
          Array ar=new Array();
-         ar.disp(a);
-        // System.out.println("1 Dispaly");
-        // System.out.println("2 for Bubble Sort");
-        // System.out.println("3 for Selection Sort");
-        // System.out.println("4 for Insertion Sort");
-        // System.out.println("Enter your choice=");
-        // int ch=sc.nextInt();
-        // switch(ch)
-        // {
-        //     case 1:
-        // }
+        for(;;){
+          
+            System.out.println("\n1 for Dispaly");
+            System.out.println("2 for Bubble Sort");
+            System.out.println("3 for Selection Sort");
+            System.out.println("4 for Exit from Program");
+            System.out.println("Enter your choice=");
+            int ch=sc.nextInt();
+            switch(ch)
+            {   
+                
+                case 1:ar.disp(a);
+                       break;
+                case 2:ar.bubble(a);
+                      break;
+                case 3:ar.selection(a);
+                       break;
+                case 4:System.exit(0);
+                default:System.out.println("invalid choice");
+            }
+        }
+        
     }
 }
 class Array{
     int i,j,temp;;
-    void disp(int [] a)
+    void disp(int[] a)
     {   System.out.println("Arrray are");
         for(i=0;i<a.length;i++)
         {
-            System.out.println("\t"+a[i]);
+            System.out.print("\t"+a[i]);
         }
     }
-    void bubble(int [] a){
-        for(i=0;i<a.length;i++){
-            for(j=1;j<a.length;j++){
-                if(a[i]>a[j]){
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
+    void bubble(int[] a){
+        for(i=0;i<a.length-1;i++){
+            for(j=0;j<a.length-i-1;j++){
+                if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
                 }
                
             }
         }
     }
-    void selection(int [] a){
+    void selection(int[] a){
         for(i=0;i<a.length;i++){
             for(j=i+1;j<a.length;j++){
                 if(a[j]<a[i]){
