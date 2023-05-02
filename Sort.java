@@ -16,7 +16,8 @@ public class Sort{
             System.out.println("\n1 for Dispaly");
             System.out.println("2 for Bubble Sort");
             System.out.println("3 for Selection Sort");
-            System.out.println("4 for Exit from Program");
+            System.out.println("4 for Insertion sort");
+            System.out.println("5 for Exit from Program");
             System.out.println("Enter your choice=");
             int ch=sc.nextInt();
             switch(ch)
@@ -28,7 +29,9 @@ public class Sort{
                       break;
                 case 3:ar.selection(a);
                        break;
-                case 4:System.exit(0);
+                case 4:ar.insertion(a);
+                       break;
+                case 5:System.exit(0);
                 default:System.out.println("invalid choice");
             }
         }
@@ -65,6 +68,19 @@ class Array{
                     a[j]=temp;
                 }
             }
+        }
+    }
+    void insertion(int a[])
+    {
+        int n = a.length;
+        for (int i = 1; i < n; ++i) {
+            int key = a[i];
+            int j = i - 1;
+            while (j >= 0 && a[j] > key) {
+                a[j + 1] = a[j];
+                j = j - 1;
+            }
+            a[j + 1] = key;
         }
     }
 }
