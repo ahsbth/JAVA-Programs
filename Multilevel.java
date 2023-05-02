@@ -6,16 +6,14 @@ public class Multilevel{
        t.get();
        t.get1();
        t.get2();
-       t.factorial();
        t.swapp();
        t.perimeter();
+       t.factorial();
 
     }
 }
 class First{
     int x;
-    int a=x;
-    
     Scanner sc=new Scanner(System.in);
     public void get()
     {
@@ -44,10 +42,10 @@ class Second extends First{
     public void swapp()
     {
         int temp;
-        temp=a;
-        a=y;
+        temp=x;
+        x=y;
         y=temp;
-        System.out.println("After Swapping First no="+a+"\tSecond no="+y);
+        System.out.println("After Swapping First no="+x+"\tSecond no="+y);
     }
 }
 class Third extends Second{
@@ -59,7 +57,7 @@ class Third extends Second{
     }
     public void perimeter()
     {
-        float s=(float)(a+y+z);
+        float s=(float)(x+y+z);
         System.out.println("Perimeter of Traingle="+s);
     }
 }
