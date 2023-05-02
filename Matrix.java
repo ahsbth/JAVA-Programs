@@ -9,7 +9,7 @@ public class Matrix {
        int C[][]=new int[2][2];// third matrix 
        Scanner sc=new Scanner(System.in);
     //    Code for Get First Matrix Values
-       System.out.println("Enter Value for first Matrix=");
+       System.out.println("Enter elements for first 2*2 Matrix=");
        for(i=0;i<2;i++)
        {
         for(j=0;j<2;j++)
@@ -18,7 +18,7 @@ public class Matrix {
         }
        }
        // Code for Get Second Matrix Values
-       System.out.println("Enter value for Second Matrix=");
+       System.out.println("Enter elements for Second 2*2 Matrix=");
        for(i=0;i<2;i++)
        {
         for(j=0;j<2;j++)
@@ -35,7 +35,7 @@ public class Matrix {
         }
 
        }
-       System.out.println("After addition of two Matrixes");
+       System.out.println("After addition of two 2*2 Matrixes");
        for(i=0;i<2;i++)
        {
         for(j=0;j<2;j++)
@@ -60,7 +60,7 @@ public class Matrix {
         }
        }
        //Display Of Multiplication of two mutrixes
-       System.out.println("After Multiplication of Matrixes=");
+       System.out.println("After Multiplication of two 2*2 Matrixes=");
        for(i=0;i<2;i++)
        {
         for(j=0;j<2;j++)
