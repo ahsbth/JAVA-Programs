@@ -3,11 +3,11 @@ public class Greatter {
     public static void main(String ar[])
     {
       Scanner sc=new Scanner(System.in);
-      System.out.println("Enter the no=");
+      System.out.println("Enter value of no=");
       int n=sc.nextInt();
       int a[]=new int[n];
       int i;
-      System.out.println("Enter the nos=");
+      System.out.println("Enter the nos");
       for(i=0;i<n;i++)
       {
          a[i]=sc.nextInt();

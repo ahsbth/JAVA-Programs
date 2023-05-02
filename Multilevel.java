@@ -26,10 +26,10 @@ class First{
     public void factorial()
     {
         long f=1;
-        while(a>0)
+        while(x>0)
         {
-            f=f*a;
-            a--;
+            f=f*x;
+            x--;
         }
         System.out.println("Factorial="+f);
     }
@@ -44,10 +44,10 @@ class Second extends First{
     public void swapp()
     {
         int temp;
-        temp=x;
-        x=y;
+        temp=a;
+        a=y;
         y=temp;
-        System.out.println("After Swapping First no="+x+"\tSecond no="+y);
+        System.out.println("After Swapping First no="+a+"\tSecond no="+y);
     }
 }
 class Third extends Second{
@@ -59,7 +59,7 @@ class Third extends Second{
     }
     public void perimeter()
     {
-        float s=(float)(x+y+z);
+        float s=(float)(a+y+z);
         System.out.println("Perimeter of Traingle="+s);
     }
 }

@@ -12,6 +12,6 @@ import java.util.Scanner;
         System.out.println("Enter a no for find factrial=");
         int no=sc.nextInt();
 		int ans = factorial(no);
-		System.out.println("Factorial of " +no+"\tis"+ans);
+		System.out.println("Factorial of " +no+"="+ans);
 	}
 }
