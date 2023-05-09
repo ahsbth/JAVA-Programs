@@ -4,35 +4,30 @@ public class Demo {
     public static void main(String args[])
     {
       Main m=new Main();
-      List l=m;
-      l.get();
-      m.find();
+      Interest l=m;
+      l.simpleintrest();
+      //m.find();
     }
 }
-interface List{
-    void get();
+interface Interest{
+    void simpleintrest();
+    void compoundintreset();
 }
 class Data{
-    int a;
+   final int r=25;
     Scanner sc=new Scanner(System.in);
 }
-class Main extends Data implements List{
- public void get()
+class Main extends Data implements Interest{
+ public void simpleintrest()
  {
-  System.out.println("Enter the data=");
-   a=sc.nextInt();
- }
- void find()
- {
-    if(a%2==0)
-    {
-        System.out.println("Even");
-    }
-    else
-    {
-        System.out.println("Odd");
-    }
- }
+  System.out.println("Enter the principle and time=");
+  float p=sc.nextFloat();
+  float t=sc.nextFloat();
+ float si=(p*r*t)/100;
+ System.out.println("Simpleintereset="+si);
 }
+
+}
+
 
 
