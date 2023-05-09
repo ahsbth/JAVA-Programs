@@ -11,7 +11,7 @@ public class Demo {
 }
 interface Interest{
     void simpleintrest();
-    void compoundintreset();
+    //void compoundintreset();
 }
 class Data{
    final int r=25;
