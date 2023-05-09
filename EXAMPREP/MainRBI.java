@@ -13,10 +13,6 @@ public class MainRBI {
         hdfc.getInterestRate();
        axiss.getInterestRate();
        icici.getInterestRate();
-
-
-
-
     }
 }
 class RBI{
