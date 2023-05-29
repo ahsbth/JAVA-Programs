@@ -1,4 +1,4 @@
-package THREAD;
+//////package THREAD;
 
 public class ThreadWithRunnableInterface {
     public static void main(String args[])
@@ -11,7 +11,7 @@ public class ThreadWithRunnableInterface {
 }
 class A implements Runnable{
     public void run()
-    {
+    {    System.out.print("Thread A");
         for(int i=0;i<10;i++)
         {
             System.out.println("\t"+i);
@@ -20,10 +20,10 @@ class A implements Runnable{
 }
 class B implements Runnable{
     public void run()
-    {
+    {    System.out.println("Thread B");
         for(int j=0;j<5;j++)
         {
-            System.out.println("\t"+j);
+            System.out.print("\t"+j);
         }
     }
 }

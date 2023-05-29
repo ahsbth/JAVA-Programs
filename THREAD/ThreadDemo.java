@@ -1,4 +1,4 @@
-package THREAD;
+//package THREAD;
 
 public class ThreadDemo {
     public static void main(String args[])
@@ -12,10 +12,10 @@ public class ThreadDemo {
 class Thread1 extends Thread{
 public void run()
 {
-    System.out.println("In Thread 1");
+System.out.println("In Thread 1");
  for(int i=0;i<10;i++)
  {
-    System.out.println("\t"+i);
+    System.out.print("\t"+i);
  }
 }
 }
@@ -23,10 +23,10 @@ class Thread2 extends Thread{
    
     public void run()
     {
-        System.out.println("In Thread 2");
-        for(int i=0;i<10;i++)
+        System.out.println("In Thread 2\n");
+        for(int i=0;i<5;i++)
         {
-            System.out.println("\t"+i);
+            System.out.print("\t"+i);
         }
     }
 }
