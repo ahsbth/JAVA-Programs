@@ -1,14 +1,11 @@
-import java.sql.Connection;
+ import java.sql.Connection;
 import java.sql.DriverManager;
-
 import java.sql.Statement;
-//import java.sql.Statement;
 public class Student {
     public void connection()
     {
         try{
             String url="jdbc:mysql://localhost:3306/";
-            
             String user_name="root";
             String pass_word="Ahsan@7860";
             Connection cn=DriverManager.getConnection(url,user_name,pass_word);
